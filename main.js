@@ -36,8 +36,10 @@ function start(event){
 	event.preventDefault();
 }
 
-function draw(event){
-	if(is_drawing){
+function draw(event)
+{
+	if(is_drawing)
+	{
 		context.lineTo(event.clientX - canvas.offsetLeft,
 			event.clientY - canvas.offsetTop);
 		context.strokeStyle = draw_color;
